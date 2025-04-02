@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:darkred;
+
+        }
+
+        header {
+            background-color: #941919;
+
+            color: #fff;
+/* 
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+            profile-picture {
+             
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 85%; /* Create a circular shape */
+            ; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #333; /* change navigation bar bg color*/
+            color: #fff;
+/* change nav bar font color */
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color:yellow;
+/* change the bg section color */
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color:darkred;
+/* download button bg color */
+            color: #fff;
+/* dowload button font color */
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+/* download button color while being pressed */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color:darkred;
+/* change the bg color of footer */
+            color:yellow;
+/* change the font color of footer */
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="https://assets.onecompiler.app/43d8x7v2w/43d9b2ccc/490a1d93-0eac-4f5e-a576-8e75fe1e39ca.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>Mohammed Abbash A</h1>
+            <p>STUDENT</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm a <b>web development</b> expert who is passionate about creating dynamic and user-friendly websites. 
+                I'm driven by the desire to craft high-performance web applications that enhance user experience and provide
+                 seamless digital solutions. With over 3 years of experience in the field, I'm dedicated to staying up to date 
+                 with the latest trends and innovations in the 
+                 web development landscape. I'm also committed to helping others learn more about web technologies, 
+                 best practices, and how to build secure and scalable websites.</p>
+
+          
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>vidyasagar collage of arts and science</p>
+
+            
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Spring</li>
+                <li>java</li>
+                <li>c++</li>
+                <li>Java script</li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">E Cart website</a></li>
+                <li><a href="#">Cloud Security IBM</a></li>
+                <li><a href="#">IBM chatbot</a></li>
+                <li><a href="#">College Portal</a></li> 
+
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="https://assets.onecompiler.app/43d8x7v2w/43d9b2ccc/Screenshot_2025-03-29-19-02-31-29_99c04817c0de5652397fc8b56c3b3817.jpg" target="_blank" class="download-button">Download CV</a>
+        </center>
+
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mohammed Abbash A</p>
+
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
